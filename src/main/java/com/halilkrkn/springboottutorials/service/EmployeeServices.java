@@ -12,9 +12,9 @@ public interface EmployeeServices {
     // CRUD (Create, Read ,Update, Delete) İşlemleri için gereken methodlar
     public List<EmployeeDto> getAllEmployees();
     public EmployeeDto createEmployee(EmployeeDto employeeDto);
-    public ResponseEntity<EmployeeDto> getEmployeeById(Long id);
-    public ResponseEntity<EmployeeDto> updateEmployee(Long id, EmployeeDto employeeDto);
-    public ResponseEntity<Map<String,Boolean>> deleteEmployee(Long id);
+    public EmployeeDto getEmployeeById(Long id);
+    public EmployeeDto updateEmployee(Long id, EmployeeDto employeeDto);
+    public Map<String,Boolean> deleteEmployee(Long id);
 
 
     // Model Mapper
