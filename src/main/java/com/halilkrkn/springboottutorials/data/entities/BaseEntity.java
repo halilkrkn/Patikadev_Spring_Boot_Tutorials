@@ -1,5 +1,6 @@
 package com.halilkrkn.springboottutorials.data.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,10 +15,15 @@ import java.util.Date;
 
 
 // Base olarak kullanılan yapıları buraya yazdık. Çünkü tüm proje için ortak yapılar.
-@MappedSuperclass
+
+//Lombok
 @Getter
 @Setter
+//Hibernate JPA
+@MappedSuperclass
+//Auditing
 @EntityListeners(AuditingEntityListener.class)
+@JsonIgnoreProperties(value = {"created_date,update_date"}, allowGetters = true)
 public class BaseEntity {
 
     @Id
