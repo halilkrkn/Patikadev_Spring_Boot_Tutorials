@@ -1,13 +1,19 @@
 package com.halilkrkn.springboottutorials;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 // Exclude ile dahil edilmesini istemediğimiz yapıları belirtiyoruz ve bir nevi devre dışı bırakıyoruz.
-//exclude = SecurityAutoConfiguration.class
-@SpringBootApplication(exclude =
-        SecurityAutoConfiguration.class
+//exclude =  {
+//        SecurityAutoConfiguration.class,
+//        ManagementWebSecurityAutoConfiguration.class
+//}
+@SpringBootApplication(exclude = {
+        SecurityAutoConfiguration.class,
+        ManagementWebSecurityAutoConfiguration.class
+}
 )
 public class PatikadevSpringBootTutorialsApplication {
 
