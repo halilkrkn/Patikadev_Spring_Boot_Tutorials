@@ -11,10 +11,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 //        SecurityAutoConfiguration.class,
 //        ManagementWebSecurityAutoConfiguration.class
 //}
-@SpringBootApplication(exclude = {
-        SecurityAutoConfiguration.class,
-        ManagementWebSecurityAutoConfiguration.class
-})
+//@SpringBootApplication(exclude = {
+//        SecurityAutoConfiguration.class,
+//        ManagementWebSecurityAutoConfiguration.class
+//})
+@SpringBootApplication
 // Auditing
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
 
