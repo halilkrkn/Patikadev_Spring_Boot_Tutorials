@@ -1,0 +1,14 @@
+JWT - Information
+- JWT = Json Web Token
+- Web Servis güvenliği, Kullanıcı doğrulaması sağlamaktır.
+- authentication ==> login / register işlmleri // Yani Kimlik Doğrulama İşlemleri
+- autherization ==> sisteme giriş yetki kontrolü // Yani Yetkilendirme İşlemleri (USER, ADMIN gibi)
+- JWT RFC7519 endüstri standartıdır.
+
+// JWT YARARLARI
+- JSON formatındadır.
+- Cookie'ler kullanmaya gerek yok
+- Doğrulama için databasee ile bağlantı kurmaya gerek yoktur.
+- Taşınabilir bir yapıya sahiptir.
+- Stateless, yapıdadır. Yani Session Yapısı oluşturmaya gerek yoktur.
+- Projeye hızlılık katar
